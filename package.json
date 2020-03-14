@@ -1,0 +1,19 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Personal portfolio for Mohil Patel",
+  "main": "index.js",
+  "author": "Mohil Patel",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "node index.js",
+    "sass": "node-sass -w scss/ -o css --recursive"
+  },
+  "devDependencies": {
+    "node-sass": "^4.13.1"
+  },
+  "dependencies": {
+    "node-static": "^0.7.11"
+  }
+}
