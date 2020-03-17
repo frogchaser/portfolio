@@ -33,17 +33,17 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5; }
   body#bg-img {
-    background: url(../img/background_pic.gif);
+    background: url(../img/background_pic.jpg);
     background-attachment: fixed;
     background-size: cover; }
     body#bg-img:after {
-      content: "";
+      content: '';
       position: absolute;
       top: 0;
       right: 0;
       width: 100%;
       height: 100%;
-      background: rgba(68, 68, 68, 0.9);
+      background: rgba(68, 68, 68, 0.7);
       z-index: -1; }
 
 h1,
