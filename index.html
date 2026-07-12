@@ -3,67 +3,616 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mohil Patel</title>
-    <link rel="stylesheet" href="css/main.css" />
+    <title>Mohil Patel — Principal Application Developer</title>
+    <meta
+      name="description"
+      content="Mohil Patel — Principal Application Developer specializing in GenAI and full-stack engineering."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Instrument+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.12.1/css/all.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     />
+
+    <link rel="stylesheet" href="css/variables.css" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/hero.css" />
+    <link rel="stylesheet" href="css/about.css" />
+    <link rel="stylesheet" href="css/experience.css" />
+    <link rel="stylesheet" href="css/projects.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+    <link rel="stylesheet" href="css/footer.css" />
   </head>
-  <body id="bg-img">
-    <header>
-      <div class="menu-btn">
-        <div class="btn-line"></div>
-        <div class="btn-line"></div>
-        <div class="btn-line"></div>
+  <body>
+    <div class="ambient-glow" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <div class="site-header__bar">
+        <a href="#home" class="brand">
+          <span class="brand__mark">MP</span>
+          <span class="brand__name">Mohil Patel</span>
+        </a>
+
+        <nav class="nav-desktop" aria-label="Primary">
+          <a href="#home" class="nav-desktop__link">Home</a>
+          <a href="#about" class="nav-desktop__link">About</a>
+          <a href="#experience" class="nav-desktop__link">Experience</a>
+          <a href="#projects" class="nav-desktop__link">Projects</a>
+          <a href="#contact" class="nav-desktop__link">Contact</a>
+          <a href="#contact" class="btn btn-primary">Let's talk</a>
+        </nav>
+
+        <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-mobile">
+          <i class="fa-solid fa-bars"></i>
+        </button>
       </div>
-      <nav class="menu">
-        <div class="menu-branding">
-          <div class="portrait"></div>
-        </div>
-        <ul class="menu-nav">
-          <li class="nav-item current">
-            <a href="/" class="nav-link">
-              Home
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="/about.html" class="nav-link">
-              About Me
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="/portfolio.html" class="nav-link">
-              Portfolio
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="/contact.html" class="nav-link">
-              Contact Me
-            </a>
-          </li>
-        </ul>
+
+      <nav id="nav-mobile" class="nav-mobile" aria-label="Mobile" hidden>
+        <a href="#home" class="nav-mobile__link">Home</a>
+        <a href="#about" class="nav-mobile__link">About</a>
+        <a href="#experience" class="nav-mobile__link">Experience</a>
+        <a href="#projects" class="nav-mobile__link">Projects</a>
+        <a href="#contact" class="nav-mobile__link">Contact</a>
       </nav>
     </header>
-    <main id="home">
-      <h1 class="lg-heading">
-        Mohil <span class="text-secondary">Patel</span>
-      </h1>
-      <h2 class="sm-heading">
-        Software Engineer, Mobile Application Developer, Designer & Entrepreneur
-      </h2>
-      <div class="icons">
-        <a href="https://www.linkedin.com/in/mohil-patel-91895a88/">
-          <i class="fab fa-linkedin fa-2x"></i>
-        </a>
-        <a href="https://twitter.com/W3ndig099">
-          <i class="fab fa-twitter fa-2x"></i>
-        </a>
-        <a href="https://github.com/frogchaser">
-          <i class="fab fa-github fa-2x"></i>
-        </a>
-      </div>
+
+    <main>
+      <!-- HERO -->
+      <section id="home" class="hero container">
+        <div class="hero__grid">
+          <div>
+            <div class="hero__availability">
+              <span class="hero__availability-dot" aria-hidden="true"></span>
+              Available for new projects
+            </div>
+            <h1 class="hero__title">Mohil<br /><span class="hero__title-accent">Patel.</span></h1>
+            <p class="hero__subtitle">Principal Application Developer · GenAI &amp; Full-Stack Engineering</p>
+            <p class="hero__description">
+              I build reliable, intelligent software — from GenAI-powered payroll platforms to secure cloud systems
+              and full-stack products. Turning complex problems into clean, human-centered solutions.
+            </p>
+            <div class="hero__actions">
+              <a href="#projects" class="btn btn-primary">View my work</a>
+              <a href="#contact" class="btn btn-outline">Get in touch</a>
+              <div class="hero__socials">
+                <a
+                  href="https://www.linkedin.com/in/patel-mohil/"
+                  target="_blank"
+                  rel="noopener"
+                  title="LinkedIn"
+                  class="hero__social"
+                  ><i class="fa-brands fa-linkedin-in"></i
+                ></a>
+                <a
+                  href="https://github.com/frogchaser"
+                  target="_blank"
+                  rel="noopener"
+                  title="GitHub"
+                  class="hero__social"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+                <a href="mailto:frogchaser99@gmail.com" title="Email" class="hero__social"
+                  ><i class="fa-regular fa-envelope"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero__portrait">
+            <div class="hero__portrait-frame" aria-hidden="true"></div>
+            <div class="hero__portrait-photo">
+              <img src="img/profile_pic.jpg" alt="Mohil Patel" />
+            </div>
+            <div class="hero__stat hero__stat--years floaty">
+              <div class="hero__stat-value">12+</div>
+              <div class="hero__stat-label">years building</div>
+            </div>
+            <div class="hero__stat hero__stat--companies floaty floaty--delayed">
+              <div class="hero__stat-value">4</div>
+              <div class="hero__stat-label">companies</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section id="about" class="section reveal">
+        <div class="container about__grid">
+          <div class="about__bio">
+            <div class="eyebrow">01 — About</div>
+            <h2 class="section-title about__heading">A few things about me</h2>
+            <p>
+              Outside of the day-to-day, you'll find me exploring new places, chasing good food, and getting
+              outside whenever I can — kayaking, white-water rafting, hiking, and skiing are regular escapes. I'm
+              an avid gamer and a dedicated reader across sci-fi, fantasy, and non-fiction (often via audiobook on
+              Audible), and I like staying plugged into current affairs.
+            </p>
+            <p>
+              One day, I hope to bring engineering rigor and genuine creative vision together to build a truly
+              great software experience.
+            </p>
+          </div>
+          <div>
+            <div class="about__skills-label">Tools &amp; Skills</div>
+            <ul class="about__skills-list">
+              <li>Java</li>
+              <li>Spring Boot</li>
+              <li>Angular</li>
+              <li>React</li>
+              <li>Python</li>
+              <li>GenAI / AI</li>
+              <li>Spec-Driven Development</li>
+              <li>TDD</li>
+              <li>Application Architecture</li>
+              <li>Microservices</li>
+              <li>Docker</li>
+              <li>Kubernetes</li>
+              <li>Android</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- EXPERIENCE -->
+      <section id="experience" class="section reveal">
+        <div class="container">
+          <div class="eyebrow">02 — Experience</div>
+          <h2 class="section-title" style="margin-bottom: 46px">Where I've worked</h2>
+
+          <div class="experience__list">
+            <article class="company-card">
+              <header class="company-card__header">
+                <h3 class="company-card__name">ADP</h3>
+                <div class="company-card__meta">Principal / Lead · 2021 — Now · Alpharetta, GA · Hybrid</div>
+              </header>
+              <div class="company-card__roles">
+                <div class="role">
+                  <div class="role__title-row">
+                    <span class="role__title">Principal Application Developer</span>
+                    <span class="role__period">May 2022 — Present</span>
+                  </div>
+                  <p class="role__desc">
+                    Build GenAI-powered products across ADP's HCM platform: Payroll Anomalies (detects payroll
+                    irregularities and orchestrates automated remediation across HCM systems), Fraud Detection
+                    (predictive risk scoring across ADP's client base), and Guided Assist under the ADP Assist
+                    umbrella — a conversational assistant for natural-language queries.
+                  </p>
+                  <div class="role__tags">
+                    <span class="tag">GenAI</span>
+                    <span class="tag">Application Architecture</span>
+                    <span class="tag">Java</span>
+                    <span class="tag">AI</span>
+                  </div>
+                </div>
+                <div class="role">
+                  <div class="role__title-row">
+                    <span class="role__title">Lead Java Developer</span>
+                    <span class="role__period">Mar 2021 — May 2022</span>
+                  </div>
+                  <p class="role__desc">
+                    Lead developer for Transparency, an ADP platform app that analyzes changes in associates'
+                    payroll calculations, identifies root causes, and surfaces clear, actionable guidance to
+                    resolve payroll discrepancies.
+                  </p>
+                  <div class="role__tags">
+                    <span class="tag">Java</span>
+                    <span class="tag">Spring Boot</span>
+                    <span class="tag">Platform</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="company-card">
+              <header class="company-card__header">
+                <h3 class="company-card__name">The Home Depot</h3>
+                <div class="company-card__meta">Full-time · 2019 — 2021 · Atlanta, GA</div>
+              </header>
+              <div class="company-card__roles">
+                <div class="role">
+                  <div class="role__title-row">
+                    <span class="role__title">Senior Software Engineer</span>
+                    <span class="role__period">Apr 2019 — Mar 2021</span>
+                  </div>
+                  <p class="role__desc">
+                    Built "Order Up," a next-gen ordering tool empowering store associates to place special
+                    orders and bulk product requests — an Angular front end backed by Java Spring Boot
+                    microservices, delivering a fast, reliable, scalable ordering experience.
+                  </p>
+                  <div class="role__tags">
+                    <span class="tag">Angular</span>
+                    <span class="tag">Java</span>
+                    <span class="tag">Spring Boot</span>
+                    <span class="tag">Microservices</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="company-card">
+              <header class="company-card__header">
+                <h3 class="company-card__name">AT&amp;T</h3>
+                <div class="company-card__meta">Full-time · 2015 — 2019 · Atlanta, GA</div>
+              </header>
+              <div class="company-card__roles">
+                <div class="role">
+                  <div class="role__title-row">
+                    <span class="role__title">Senior — Technology Security</span>
+                    <span class="role__period">Apr 2018 — Apr 2019</span>
+                  </div>
+                  <p class="role__desc">
+                    Partnered with AT&amp;T's Chief Security Office to strengthen cloud security posture across
+                    enterprise platforms, identifying vulnerabilities and implementing best practices to safeguard
+                    cloud infrastructure.
+                  </p>
+                  <div class="role__tags">
+                    <span class="tag">Cloud Security</span>
+                    <span class="tag">CSO</span>
+                    <span class="tag">Enterprise</span>
+                  </div>
+                </div>
+                <div class="role">
+                  <div class="role__title-row">
+                    <span class="role__title">Sr Specialist — Applications Developer</span>
+                    <span class="role__period">Jul 2017 — Mar 2018</span>
+                  </div>
+                  <p class="role__desc">
+                    Evaluated the security posture of cloud and container technologies — OpenStack, Docker, and
+                    Kubernetes — identifying risks and recommending hardening strategies for secure adoption of
+                    containerized infrastructure.
+                  </p>
+                  <div class="role__tags">
+                    <span class="tag">Docker</span>
+                    <span class="tag">Kubernetes</span>
+                    <span class="tag">OpenStack</span>
+                  </div>
+                </div>
+                <div class="role">
+                  <div class="role__title-row">
+                    <span class="role__title">Specialist — Applications Developer</span>
+                    <span class="role__period">Feb 2016 — Jul 2017</span>
+                  </div>
+                  <p class="role__desc">
+                    Part of AT&amp;T's Technology Development Program (TDP), contributing to research on
+                    Software-Defined Networking (SDN) and Network Functions Virtualization (NFV) to support the
+                    evolution of AT&amp;T's network architecture.
+                  </p>
+                  <div class="role__tags">
+                    <span class="tag">SDN</span>
+                    <span class="tag">NFV</span>
+                    <span class="tag">Research</span>
+                  </div>
+                </div>
+                <div class="role">
+                  <div class="role__title-row">
+                    <span class="role__title">Associate — Applications Developer</span>
+                    <span class="role__period">Jan 2015 — Jan 2016</span>
+                  </div>
+                  <p class="role__desc">
+                    Built and supported Java applications interfacing with AT&amp;T's Order Management System
+                    (OMS), ensuring seamless integration between internal applications and OMS for critical order
+                    processing.
+                  </p>
+                  <div class="role__tags">
+                    <span class="tag">Java</span>
+                    <span class="tag">OMS</span>
+                    <span class="tag">Integration</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="company-card">
+              <header class="company-card__header">
+                <h3 class="company-card__name">LexisNexis</h3>
+                <div class="company-card__meta">Internship · Summer 2014 · Atlanta, GA</div>
+              </header>
+              <div class="company-card__roles">
+                <div class="role">
+                  <div class="role__title-row">
+                    <span class="role__title">Software Engineering Intern</span>
+                    <span class="role__period">Jun 2014 — Aug 2014</span>
+                  </div>
+                  <p class="role__desc">
+                    Gained hands-on experience with the Spring framework, integration testing methodologies, and
+                    Android application development on risk-solutions products.
+                  </p>
+                  <div class="role__tags">
+                    <span class="tag">Spring</span>
+                    <span class="tag">Android</span>
+                    <span class="tag">Testing</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section id="projects" class="section reveal">
+        <div class="container">
+          <div class="projects__header">
+            <div>
+              <div class="eyebrow">03 — Projects</div>
+              <h2 class="section-title">Selected work</h2>
+            </div>
+            <p class="projects__intro">
+              A mix of professional work at AT&amp;T and academic engineering projects. Client &amp; enterprise
+              projects coming soon.
+            </p>
+          </div>
+
+          <div class="projects__grid">
+            <article class="project-card">
+              <div class="project-card__banner">
+                <span class="project-badge project-badge--pro"
+                  ><i class="fa-solid fa-briefcase"></i>AT&amp;T · Professional</span
+                >
+                <span class="project-card__slug">// att · cord</span>
+              </div>
+              <div class="project-card__body">
+                <div class="project-card__category">Telco · NFV / SDN</div>
+                <h3 class="project-card__title">CORD Services</h3>
+                <p class="project-card__desc">
+                  Deployed and configured new subscriber services on CORD (Central Office Re-architected as a
+                  Datacenter) — an open platform that fuses NFV, SDN and OpenStack commodity cloud to turn the
+                  telco central office into an elastic datacenter. Services were modeled declaratively (XOS /
+                  YANG) and orchestrated over an ONOS-controlled fabric for agile, real-time provisioning.
+                </p>
+                <div class="project-card__tags">
+                  <span class="tag">NFV</span>
+                  <span class="tag">SDN</span>
+                  <span class="tag">OpenStack</span>
+                  <span class="tag">ONOS</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-card__banner">
+                <span class="project-badge project-badge--academic"
+                  ><i class="fa-solid fa-graduation-cap"></i>Academic</span
+                >
+                <span class="project-card__slug">// systems</span>
+              </div>
+              <div class="project-card__body">
+                <div class="project-card__category">Operating Systems</div>
+                <h3 class="project-card__title">Operating System Simulator</h3>
+                <p class="project-card__desc">
+                  A multithreaded OS simulator that loads jobs encoded in hex and executes them on a virtual CPU
+                  configurable for 1 or 4 cores. Implemented the full instruction pipeline (fetch / decode /
+                  execute), long- and short-term schedulers, dispatcher, memory management, ready/wait queues,
+                  per-process control blocks (PCBs), and simulated RAM and disk.
+                </p>
+                <div class="project-card__tags">
+                  <span class="tag">Multithreading</span>
+                  <span class="tag">CPU Scheduling</span>
+                  <span class="tag">Virtual Memory</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-card__banner">
+                <span class="project-badge project-badge--academic"
+                  ><i class="fa-solid fa-graduation-cap"></i>Academic</span
+                >
+                <span class="project-card__slug">// web</span>
+              </div>
+              <div class="project-card__body">
+                <div class="project-card__category">Full-stack Web</div>
+                <h3 class="project-card__title">Waggle Forum</h3>
+                <p class="project-card__desc">
+                  A LAMP-stack discussion platform restricted to verified university emails, with public and
+                  private topics, threaded file sharing, user-created groups with invitations, and role-based
+                  admin moderation. On a four-person Agile/Scrum team I owned the normalized MySQL schema, core
+                  UI, file-upload pipeline, and the email verification and password-reset flows.
+                </p>
+                <div class="project-card__tags">
+                  <span class="tag">PHP</span>
+                  <span class="tag">MySQL</span>
+                  <span class="tag">JavaScript</span>
+                  <span class="tag">LAMP</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-card__banner">
+                <span class="project-badge project-badge--academic"
+                  ><i class="fa-solid fa-graduation-cap"></i>Academic</span
+                >
+                <span class="project-card__slug">// monitoring</span>
+              </div>
+              <div class="project-card__body">
+                <div class="project-card__category">Systems Monitoring</div>
+                <h3 class="project-card__title">Remote Network Status Monitor</h3>
+                <p class="project-card__desc">
+                  A four-tier monitoring system for a CSE data center: an always-on Windows Service polls
+                  heterogeneous servers for health metrics, persists them to SQL Server, exposes them through a
+                  REST Web API, and surfaces them in a Windows 8.1 dashboard client. I built the 24/7 Windows
+                  Service and portions of the Web API.
+                </p>
+                <div class="project-card__tags">
+                  <span class="tag">C#</span>
+                  <span class="tag">.NET</span>
+                  <span class="tag">SQL Server</span>
+                  <span class="tag">REST API</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-card__banner">
+                <span class="project-badge project-badge--academic"
+                  ><i class="fa-solid fa-graduation-cap"></i>Academic</span
+                >
+                <span class="project-card__slug">// mobile</span>
+              </div>
+              <div class="project-card__body">
+                <div class="project-card__category">Android</div>
+                <h3 class="project-card__title">Set Game for Android</h3>
+                <p class="project-card__desc">
+                  A solo Android implementation of the Set pattern-matching card game — a self-contained game
+                  engine, real-time set-validation logic and a touch-driven UI — architected and packaged for
+                  release on the Google Play Store.
+                </p>
+                <div class="project-card__tags">
+                  <span class="tag">Android</span>
+                  <span class="tag">Java</span>
+                  <span class="tag">Game Logic</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-card__banner">
+                <span class="project-badge project-badge--academic"
+                  ><i class="fa-solid fa-graduation-cap"></i>Academic</span
+                >
+                <span class="project-card__slug">// hardware</span>
+              </div>
+              <div class="project-card__body">
+                <div class="project-card__category">Hardware / IoT</div>
+                <h3 class="project-card__title">Autonomous Arduino Quadcopter</h3>
+                <p class="project-card__desc">
+                  An autonomous quadcopter built on an Arduino Uno that fuses gyroscope, ultrasonic (ping) and
+                  motion-sensor input into a real-time control loop for self-stabilizing flight and
+                  obstacle-aware navigation.
+                </p>
+                <div class="project-card__tags">
+                  <span class="tag">Arduino</span>
+                  <span class="tag">C</span>
+                  <span class="tag">Sensor Fusion</span>
+                  <span class="tag">Robotics</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-card__banner">
+                <span class="project-badge project-badge--academic"
+                  ><i class="fa-solid fa-graduation-cap"></i>Academic</span
+                >
+                <span class="project-card__slug">// crawler</span>
+              </div>
+              <div class="project-card__body">
+                <div class="project-card__category">Web Crawler</div>
+                <h3 class="project-card__title">Forager Domain Crawler</h3>
+                <p class="project-card__desc">
+                  A configurable web crawler that recursively traverses a target domain, maps its internal link
+                  graph, and flags broken and malformed links across every reachable page. Built as a team
+                  project.
+                </p>
+                <div class="project-card__tags">
+                  <span class="tag">Web Crawling</span>
+                  <span class="tag">Link Analysis</span>
+                  <span class="tag">Automation</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" class="section reveal">
+        <div class="container">
+          <div class="contact__panel">
+            <div>
+              <div class="eyebrow">04 — Contact</div>
+              <h2 class="contact__title">Let's build<br />something great.</h2>
+              <p class="contact__lede">
+                Have a project in mind or a role to fill? Send a note and I'll get back to you within a couple of
+                days.
+              </p>
+              <a href="mailto:frogchaser99@gmail.com" class="contact__email">
+                <span class="contact__email-icon"><i class="fa-regular fa-envelope"></i></span>
+                frogchaser99@gmail.com
+              </a>
+              <div class="contact__socials">
+                <a
+                  href="https://www.linkedin.com/in/patel-mohil/"
+                  target="_blank"
+                  rel="noopener"
+                  title="LinkedIn"
+                  class="contact__social"
+                  ><i class="fa-brands fa-linkedin-in"></i
+                ></a>
+                <a
+                  href="https://github.com/frogchaser"
+                  target="_blank"
+                  rel="noopener"
+                  title="GitHub"
+                  class="contact__social"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+                <a href="mailto:frogchaser99@gmail.com" title="Email" class="contact__social"
+                  ><i class="fa-regular fa-envelope"></i
+                ></a>
+              </div>
+            </div>
+
+            <div>
+              <form class="contact-form" novalidate>
+                <div class="contact-form__field" data-field="name">
+                  <label for="contact-name">Name</label>
+                  <input id="contact-name" name="name" type="text" placeholder="Your name" />
+                  <div class="contact-form__error"></div>
+                </div>
+                <div class="contact-form__field" data-field="email">
+                  <label for="contact-email">Email</label>
+                  <input id="contact-email" name="email" type="email" placeholder="you@company.com" />
+                  <div class="contact-form__error"></div>
+                </div>
+                <div class="contact-form__field" data-field="message">
+                  <label for="contact-message">Message</label>
+                  <textarea
+                    id="contact-message"
+                    name="message"
+                    rows="4"
+                    placeholder="Tell me about your project or role..."
+                  ></textarea>
+                  <div class="contact-form__error"></div>
+                </div>
+                <button type="submit" class="btn btn-primary">Send message</button>
+              </form>
+
+              <div class="contact-form__status" hidden>
+                <div class="contact-form__status-icon"><i class="fa-solid fa-check"></i></div>
+                <h3>Message sent!</h3>
+                <p>Thanks for reaching out, <span data-sent-name></span>. I'll reply to your email soon.</p>
+                <button type="button" class="btn btn-outline" data-reset>Send another</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-    <script src="script/main.js"></script>
+
+    <footer class="site-footer">
+      <div class="site-footer__bar">
+        <div class="site-footer__brand">
+          <span class="site-footer__mark">MP</span>
+          <span class="site-footer__copyright">© 2026 Mohil Patel. Built with care.</span>
+        </div>
+        <div class="site-footer__links">
+          <a href="https://www.linkedin.com/in/patel-mohil/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://github.com/frogchaser" target="_blank" rel="noopener">GitHub</a>
+          <a href="mailto:frogchaser99@gmail.com">Email</a>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="js/main.js"></script>
   </body>
 </html>

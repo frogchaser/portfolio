@@ -1,0 +1,54 @@
+/* Bio copy + skills tag cloud, two columns on wide screens. */
+.about__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 56px;
+}
+
+.about__heading {
+  margin: 0 0 22px;
+}
+
+.about__bio p {
+  font-size: 16.5px;
+  line-height: 1.7;
+  color: var(--color-text-soft);
+  margin: 0 0 16px;
+}
+.about__bio p:last-child {
+  margin-bottom: 0;
+}
+
+.about__skills-label {
+  font-family: var(--font-display);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--color-text-dim);
+  margin-bottom: 18px;
+}
+
+.about__skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.about__skills-list li {
+  font-size: 14px;
+  font-weight: 500;
+  padding: 9px 15px;
+  border-radius: 10px;
+  background: var(--color-surface-alt);
+  border: 1px solid var(--color-border);
+  color: var(--color-text-soft);
+}
+
+@media (min-width: 860px) {
+  .about__grid {
+    grid-template-columns: 1.2fr 0.8fr;
+  }
+}
