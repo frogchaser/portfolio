@@ -141,7 +141,8 @@
   max-width: 300px;
 }
 
-.contact [hidden] {
+.contact-form[hidden],
+.contact-form__status[hidden] {
   display: none;
 }
 
